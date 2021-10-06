@@ -7,13 +7,13 @@
     "source=container-share-cache,target=/usr/local/share/.cache,type=volume"
   ],
   "extensions": [
-    "github.vscode-pull-request-github",
-    "ms-azuretools.vscode-docker",
     "mutantdino.resourcemonitor",
+    "github.vscode-pull-request-github",
+    "eamodio.gitlens",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "eamodio.gitlens",
-    "octref.vetur",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "johnsoncodehk.volar",
+    "johnsoncodehk.vscode-typescript-vue-plugin"
   ]
 }
