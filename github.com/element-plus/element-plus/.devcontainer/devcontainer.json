@@ -2,7 +2,9 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/main/containers/javascript-node
 {
   "name": "Element Plus",
-  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node",
+  "image": "ghcr.io/coajs/javascript-node",
+  "runArgs": ["--init"],
+  "remoteUser": "node",
   "mounts": [
     "source=container-share-cache,target=/usr/local/share/.cache,type=volume"
   ],
