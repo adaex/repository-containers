@@ -2,8 +2,10 @@
 // https://github.com/microsoft/vscode-dev-containers/tree/main/containers/javascript-node
 {
   "name": "Element Plus",
-  "image": "ghcr.io/coajs/javascript-node",
-  "runArgs": ["--init"],
+  "image": "ghcr.io/coajs/javascript-node-desktop",
+  "runArgs": ["--init", "--security-opt", "seccomp=unconfined"],
+  "forwardPorts": [6080, 5901],
+  "overrideCommand": false,
   "remoteUser": "node",
   "mounts": [
     "source=container-share-cache,target=/usr/local/share/.cache,type=volume"
